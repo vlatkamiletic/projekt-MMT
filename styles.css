@@ -10,19 +10,81 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+/* 
 header {
-    background: linear-gradient(135deg, #0b4f6c, #01baef);
+    background: linear-gradient(135deg, #0b306c, #01baef);
     color: white;
     padding: 20px 0;
     text-align: center;
-}
+} */
+
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero-visual {
+    background-color: black;
+    height: 100vh; /* cijeli ekran */
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* više nije absolute */
+    z-index: 0;
+}
+
+
+.hero-visual-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.text-overlay h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    color: rgb(209, 226, 220);
+}
+
+.text-overlay p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: Palatino, URW Palladio L, serif;
+}
+
 
 .main-content {
     display: grid;
