@@ -110,8 +110,8 @@
                 <div class="authors-section">
                     <h3>Autori</h3>
                     <div class="author-card">
-                        <img src="images/Groot.jpg" alt="Pero Perić" class="author-img" id="author1-img">
-                        <div class="author-name" id="author1-name">Pero Perić</div> 
+                        <img src="images/Groot.jpg" alt="Vlatka Miletić" class="author-img" id="author1-img">
+                        <div class="author-name" id="author1-name">Vlatka Miletić</div> 
                     </div>
                     <div class="author-card">
                         <img src="/api/placeholder/200/200" alt="Marija Marić" class="author-img" id="author2-img"> <!--Slikica-->
@@ -122,8 +122,9 @@
                 <div class="other-sports">
                     <h3>Drugi izbori</h3>
                     <ul>
-                        <li><a href="javascript:void(0)" id="sport1">Perin drugi izbor: Košarka</a></li>
-                        <li><a href="javascript:void(0)" id="sport2">Marijin drugi izbor: Tenis</a></li>
+                        <li><a href="javascript:void(0)" id="sport1">Vlatkin drugi izbor: Tenis</a></li>
+                        <li><a href="javascript:void(0)" id="sport2">Marijin drugi izbor: Košarka</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -133,12 +134,12 @@
             <h2>Bavim li se i ja ovim sportom ili ga samo volim?</h2>
             <div class="involvement-cards">
                 <div class="involvement-card">
-                    <h3>Pero odgovara:</h3>
+                    <h3>Vlatka odgovara:</h3>
                     <p>Nogometom se bavim rekreativno već više od 10 godina. Igram u lokalnom klubu veterana, a tu i tamo odigramo i pokoju revijalnu utakmicu.</p>
                     <p>Pogledajte neke trenutke s naših utakmica:</p>
                     <div class="gallery">
                         <div class="gallery-item">
-                            <img src="/api/placeholder/400/300" alt="Pero igra nogomet" class="gallery-img">
+                            <img src="/api/placeholder/400/300" alt="Vlatka igra nogomet" class="gallery-img">
                         </div>
                     </div>
                     <audio controls style="width: 100%; margin-top: 10px;">
@@ -168,7 +169,7 @@
     
     <div class="footer">
         <p>Web stranica izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku</a> u sklopu kolegija <a href="https://www.ferit.unios.hr/studiji/sveucilisni-preddiplomski-studij/SR601/38" target="_blank">Multimedijska tehnika</a>.</p>
-        <p>&copy; 2025. Pero Perić i Marija Marić</p>
+        <p>&copy; 2025. Vlatka Miletić i Marija Marić</p>
     </div>
     
     <!-- Modal za prikaz slika u većoj rezoluciji -->
@@ -177,13 +178,13 @@
         <img class="modal-content" id="modalImg">
     </div>
     
-    <!-- Pero Perić info -->
+    <!-- Vlatka Miletić info -->
     <div id="author1-info" class="author-info">
-        <h3>Pero Perić</h3>
-        <p><strong>Mjesto rođenja:</strong> <a href="https://www.osijek.hr/" target="_blank">Osijek</a></p>
+        <h3>Vlatka Miletić</h3>
+        <p><strong>Mjesto rođenja:</strong> <a href="https://www.slavonski-brod.hr/" target="_blank">Slavonski Brod</a></p>
         <p><strong>Mjesto stanovanja:</strong> <a href="https://www.osijek.hr/" target="_blank">Osijek</a></p>
-        <p><strong>Osnovna škola:</strong> <a href="http://os-vijenac-os.skole.hr/" target="_blank">OŠ Vijenac</a></p>
-        <p><strong>Srednja škola:</strong> <a href="http://ss-tehnicka-os.skole.hr/" target="_blank">Tehnička škola</a></p>
+        <p><strong>Osnovna škola:</strong> <a href="https://os-btadijanovic-sb.skole.hr/" target="_blank">OŠ Blaž Tadijanović</a></p>
+        <p><strong>Srednja škola:</strong> <a href="https://tssb.hr/" target="_blank">Tehnička škola Slavonski Brod</a></p>
         <p><strong>Fakultet:</strong> <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a></p>
         <button onclick="closeAuthorInfo('author1-info')">Zatvori</button>
     </div>
@@ -199,12 +200,30 @@
         <button onclick="closeAuthorInfo('author2-info')">Zatvori</button>
     </div>
     
-    <!-- Košarka modal -->
+    <!-- Tenis modal -->
     <div id="sport1-info" class="author-info" style="max-width: 600px;">
+        <h3>Tenis</h3>
+        <p>Tenis je sport u kojem se igrači (po jedan ili dva na svakoj strani) natječu tako da reketom udaraju lopticu preko mreže na protivničku stranu terena.</p>
+        <p>Osnovne značajke tenisa:</p>
+        <ul style="margin-left: 40px;">
+            <li>Igra se na pravokutnom terenu različitih podloga (trava, zemlja, tvrda podloga)</li>
+            <li>Bodovanje je specifično: 15, 30, 40, gem</li>
+            <li>Za pobjedu u setu treba osvojiti najmanje 6 gemova (s najmanje 2 gema razlike)</li>
+            <li>U muškom tenisu igra se na 3 ili 5 setova, u ženskom na 3 seta</li>
+        </ul>
+        <p>Više o tenisu možete saznati na stranicama <a href="https://www.hts.hr/" target="_blank">Hrvatskog teniskog saveza</a>.</p>
+        <div class="gallery-item" style="margin: 20px auto; max-width: 300px;">
+            <img src="images/tenis.jpg" alt="Tenis" class="gallery-img" style="height: 200px;">
+        </div>
+        <button onclick="closeAuthorInfo('sport1-info')">Zatvori</button>
+    </div>
+
+    <!-- Košarka modal -->
+    <div id="sport2-info" class="author-info" style="max-width: 600px;">
         <h3>Košarka</h3>
         <p>Košarka je momčadski sport u kojem dvije ekipe sa po pet igrača pokušavaju ostvariti što više poena ubacivanjem lopte u protivnički koš.</p>
         <p>Osnovne značajke košarke:</p>
-        <ul>
+        <ul style="margin-left: 40px;">
             <li>Igra se na terenu dimenzija 28×15 metara</li>
             <li>Koš je na visini od 3.05 metara</li>
             <li>Utakmica traje 4×10 minuta (FIBA) ili 4×12 minuta (NBA)</li>
@@ -214,24 +233,6 @@
         <p>Više o košarci možete saznati na stranicama <a href="https://www.hks-cbf.hr/" target="_blank">Hrvatskog košarkaškog saveza</a>.</p>
         <div class="gallery-item" style="margin: 20px auto; max-width: 300px;">
             <img src="/api/placeholder/400/300" alt="Košarka" class="gallery-img" style="height: 200px;">
-        </div>
-        <button onclick="closeAuthorInfo('sport1-info')">Zatvori</button>
-    </div>
-    
-    <!-- Tenis modal -->
-    <div id="sport2-info" class="author-info" style="max-width: 600px;">
-        <h3>Tenis</h3>
-        <p>Tenis je sport u kojem se igrači (po jedan ili dva na svakoj strani) natječu tako da reketom udaraju lopticu preko mreže na protivničku stranu terena.</p>
-        <p>Osnovne značajke tenisa:</p>
-        <ul>
-            <li>Igra se na pravokutnom terenu različitih podloga (trava, zemlja, tvrda podloga)</li>
-            <li>Bodovanje je specifično: 15, 30, 40, gem</li>
-            <li>Za pobjedu u setu treba osvojiti najmanje 6 gemova (s najmanje 2 gema razlike)</li>
-            <li>U muškom tenisu igra se na 3 ili 5 setova, u ženskom na 3 seta</li>
-        </ul>
-        <p>Više o tenisu možete saznati na stranicama <a href="https://www.hts.hr/" target="_blank">Hrvatskog teniskog saveza</a>.</p>
-        <div class="gallery-item" style="margin: 20px auto; max-width: 300px;">
-            <img src="/api/placeholder/400/300" alt="Tenis" class="gallery-img" style="height: 200px;">
         </div>
         <button onclick="closeAuthorInfo('sport2-info')">Zatvori</button>
     </div>

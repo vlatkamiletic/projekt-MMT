@@ -341,3 +341,20 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+button {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
