@@ -18,6 +18,33 @@ header {
     text-align: center;
 } */
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 10;
+}
+
+.back-home-btn {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-home-btn:hover {
+    background-color: #0056b3;
+}
+
 
 .container {
     max-width: 1200px;
@@ -61,6 +88,52 @@ header {
     display: block;
 }
 
+
+.hero-image {
+    width: 100%;
+    height: auto;  /* Ovdje koristimo auto da bi se visina automatski prilagodila */
+    object-fit: contain;  /* Osigurava da se slika ne izreže */
+    display: block;
+    margin: 0 auto;
+    opacity: 0.8;  /* Postavlja prozirnost samo za sliku */
+}
+
+
+.logo {
+    position: absolute;
+    top: 20px; /* Udaljenost od vrha */
+    left: 20px; /* Udaljenost od lijevog ruba */
+    width: 150px; /* Prilagodi veličinu loga */
+    height: auto;
+    z-index: 10; /* Osiguraj da logo bude iznad videa */
+}
+
+.additional-sports-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.sport-button {
+    background-color: #b9d29f;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.sport-button:hover {
+    background-color: #a8cb82;
+}
+
+
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -98,24 +171,45 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 25px;
+    width: 100%; /* Postavljanje širine kartice na 100% roditeljskog elementa */
+    max-width: 1200px; /* Maksimalna širina kartice */
+    margin: 0 auto; /* Centriranje kartice unutar roditeljskog elementa */
 }
 
 .sidebar {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Održava vertikalni raspored za sidebar */
+    gap: 30px; /* Razmak između naslova i kartica */
+    padding: 15px;
 }
 
 .authors-section {
+    display: flex;
+    flex-direction: row; /* Raspored kartica u horizontalnom smjeru */
+    gap: 20px; /* Razmak između kartica */
+    justify-content: flex-start; /* Poravnava kartice s lijeve strane */
+    width: 100%;
+}
+
+.authors-section-title {
+    font-size: 24px; /* Veći font za naslov */
+    font-weight: bold;
+    color: #0b4f6c;
+    text-align: left; /* Naslov poravnat s lijeve strane */
+    width: 100%; /* Da bi naslov zauzeo cijeli prostor */
+    margin-bottom: 20px; /* Razmak između naslova i kartica */
+}
+
+.author-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 15px;
     text-align: center;
-}
-
-.author-card {
-    margin-bottom: 20px;
+    width: 180px; /* Širina svake kartice */
+    display: flex;
+    flex-direction: column; /* Slika je iznad imena */
+    align-items: center; /* Centriranje sadržaja u kartici */
 }
 
 .author-img {
@@ -138,6 +232,7 @@ header {
     cursor: pointer;
     font-weight: bold;
 }
+
 
 .other-sports {
     background-color: white;
@@ -177,7 +272,7 @@ header {
 }
 
 .footer {
-    background-color: #0b4f6c;
+    background-color: #5f6d50;
     color: white;
     text-align: center;
     padding: 20px;
@@ -358,3 +453,60 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+
+/* Gumb za početnu stranicu u gornjem desnom kutu */
+.additional-home-button {
+    position: fixed; /* Stavlja gumb u fiksnu poziciju, ne pomiče se pri skrolanju */
+    top: 20px; /* Udaljenost od vrha stranice */
+    right: 20px; /* Udaljenost od desne strane */
+    z-index: 10; /* Osiguraj da gumb bude iznad loga */
+}
+
+.home-button {
+    background-color: #b9d29f;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #a8cb82;
+}
+
+/*dodatni sport - tekst*/
+/* Raspored slike i teksta */
+.text-with-image {
+    display: flex;
+    align-items: center; /* Vertikalno poravnanje slike i teksta */
+    margin-bottom: 20px;
+}
+
+.text-with-image img {
+    width: 450px; /* Prilagodite veličinu slike */
+    height: auto;
+    margin-right: 15px; /* Razmak između slike i teksta */
+}
+
+/* Kada želite da slika bude desno od teksta */
+.text-with-image.reverse {
+    flex-direction: row-reverse; /* Obrne smjer slika i tekst */
+}
+
+.text-with-image p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*Stil za paragrafe i slike
+.sport-description {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}*/

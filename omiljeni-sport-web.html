@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nogomet - naš omiljeni sport</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
 </head>
 <body>
     <!-- <header>
         <h1>Nogomet - naš omiljeni sport</h1>
     </header> -->
-    <header>
+    <header>    
         <section class="hero">
             <div class="hero-visual">
             <div class="hero-visual-wrapper">
@@ -25,12 +28,20 @@
                     <source src="video/4729195-hd_1920_1080_25fps.mp4" type="video/mp4">
                     Vaš preglednik ne podržava video element.
                 </video>
+                <a href="images/logo1-removebg-preview.png" target="_blank">
+                    <img src="images/logo1-removebg-preview.png" alt="Logo" class="logo">
+                </a>
             </div>
             <div class="text-overlay">
                 <h1>Nogomet</h1>
                 <br>
                 <p>umjetnost, disciplina i strast u jednom</p>
             </div>
+            </div>
+            <!-- Dodajemo gumbe za dodatne sportove u gornji desni kut -->
+            <div class="additional-sports-buttons">
+                <a href="formula.html" class="sport-button">Formula 1</a>
+                <a href="tenis.html" class="sport-button">Tenis</a>
             </div>
         </section>
     </header>
@@ -39,10 +50,12 @@
         <div class="main-content">
             <div class="sport-description">
                 <h2>O nogometu</h2>
-                <p>Nogomet je momčadski sport koji se igra između dvije ekipe od po jedanaest igrača. Cilj igre je postići više golova od protivnika, gurajući loptu u protivnički gol. Osim vratara, igrači ne smiju namjerno dodirivati loptu rukama tijekom igre.</p>
-                
-                <p>Nogomet je najpopularniji sport na svijetu, s više od 250 milijuna igrača u preko 200 zemalja. Međunarodna nogometna federacija FIFA je glavno upravno tijelo nogometa.</p>
-                <p>Više o međunarodnoj nogometnoj federacija FIFA možete sazanati na <a href="https://www.fifa.com/" target="_blank">službenim stranicama FIFA-e</a>.</p>
+                <div class="text-with-image">
+                    <img src="images/travnjak-removebg-preview.png" alt="Tennis Icon Left" class="image-left" data-format="png">
+                    <p>Nogomet je momčadski sport koji se igra između dvije ekipe od po jedanaest igrača. Cilj igre je postići više golova od protivnika, gurajući loptu u protivnički gol. Osim vratara, igrači ne smiju namjerno dodirivati loptu rukama tijekom igre.
+                        Nogomet je najpopularniji sport na svijetu, s više od 250 milijuna igrača u preko 200 zemalja. Međunarodna nogometna federacija FIFA je glavno upravno tijelo nogometa.
+                        Više o međunarodnoj nogometnoj federacija FIFA možete sazanati na <a href="https://www.fifa.com/" target="_blank">službenim stranicama FIFA-e</a>.</p>
+                </div>
 
                 <h2>Pravila igre</h2>
                 <p>Osnovni cilj igre je postići pogodak, a pobjeđuje momčad koja postigne više pogodaka. Utakmica traje 90 minuta, podijeljeno u dva poluvremena po 45 minuta. Između dva poluvremena je odmor od 15 minuta.</p>
@@ -58,6 +71,37 @@
                 
                 <p>Više o pravilima možete saznati na <a href="https://www.theifab.com/" target="_blank">stranicama Međunarodnog odbora nogometnih saveza</a>.</p>
                 
+                <h2>Najveća Nogometna Natjecanja</h2>
+                <p>Nogomet je domaćin nekih od najvećih i najuzbudljivijih natjecanja na svijetu. Neki od najpoznatijih su:</p>
+                <div class="text-with-image reverse">
+                    <img src="images/slika-bmp-format.bmp" alt="Tennis Icon Left" class="image-left" data-format="bmp">
+                    <ul>
+                        <li><strong>Premier League</strong> - Najveća engleska nogometna liga, koja okuplja najpoznatije klubove poput Manchester Uniteda, Liverpoola, Arsenala i Chelseaja.</li>
+                        <li><strong>La Liga</strong> - Španjolska liga koja je domaćin velikim klubovima poput Barcelone i Real Madrida.</li>
+                        <li><strong>Serie A</strong> - Italijanska liga u kojoj se natječu klubovi poput Juventusa, Intera i Milana.</li>
+                        <li><strong>FIFA Svjetsko Prvenstvo</strong> - Najprestžniji međunarodni nogometni turnir koji se održava svake četiri godine.</li>
+                        <li><strong>UEFA Champions League</strong> - Najveće europsko klupsko natjecanje na kojem sudjeluju najbolji klubovi iz cijele Europe.</li>
+                    </ul>
+                </div>
+
+                <h2>O nogometu u Hrvatskoj</h2>
+                <div class="text-with-image">
+                    <img src="images/slika4.jpg" alt="Nogometna utakmica" class="image-left" data-format="jpg">
+                    <p>Nogomet u Hrvatskoj ima dugu i bogatu povijest, a hrvatska reprezentacija uživa ogromnu popularnost. Hrvatska je domaćin velikih nogometnih talenata koji su kroz povijest ostavili neizbrisiv trag na svjetskoj nogometnoj sceni. Posebno je poznata po svojoj izvanrednoj izvedbi na Svjetskom prvenstvu 2018. godine, kada je reprezentacija osvojila drugo mjesto, što je povijestni uspjeh za ovu malu zemlju. Iako nogomet nije jedini sport u zemlji, on je definitivno najvažniji, a utakmice Hrvatske su uvijek pratene s velikim entuzijazmom i strašću.</p>
+                </div>    
+                <p>Nogomet je izuzetno popularan u svim dijelovima Hrvatske, a domaći klubovi poput Dinama, Hajduka, Rijeke i Osijeka imaju vjerne navijače koji prate njihove utakmice u velikom broju. Posebno se ističe nogometna liga Hrvatske, poznata kao Hrvatski Telekom Prva liga, koja je iz godine u godinu sve konkurentnija.</p>
+                <p>Hrvatska je poznata i po svojim strastvenim navijačima. Dio atmosfere s utakmice hrvatske reprezentacije možete poslušati u nastavku.</p>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="audio/audio1.mp3" type="audio/mpeg">
+                        Vaš preglednik ne podržava audio element.
+                    </audio>
+                    <p><em>Atmosfera s utakmice hrvatske reprezentacije</em></p>
+                </div>
+                <p>Više o nogometu u Hrvatskoj možete saznati na <a href="https://hns-cff.hr/" target="_blank">službenim stranicama Hrvatskog nogometnog saveza</a>.</p>
+    
+
+
                 <h2>Galerija slika</h2>
                 <div class="gallery">
                     <div class="gallery-item">
@@ -96,38 +140,8 @@
                     <p><em>Glup malo video</em></p>
                 </div>
                 
-                <h2>Audio sadržaj</h2>
-                <div class="audio-container">
-                    <audio controls>
-                        <source src="audio/audio1.mp3" type="audio/mpeg">
-                        Vaš preglednik ne podržava audio element.
-                    </audio>
-                    <p><em>Atmosfera s utakmice hrvatske reprezentacije</em></p>
-                </div>
             </div>
             
-            <div class="sidebar">
-                <div class="authors-section">
-                    <h3>Autori</h3>
-                    <div class="author-card">
-                        <img src="images/Groot.jpg" alt="Vlatka Miletić" class="author-img" id="author1-img">
-                        <div class="author-name" id="author1-name">Vlatka Miletić</div> 
-                    </div>
-                    <div class="author-card">
-                        <img src="/api/placeholder/200/200" alt="Marija Marić" class="author-img" id="author2-img"> <!--Slikica-->
-                        <div class="author-name" id="author2-name">Marija Marić</div>
-                    </div>
-                </div>
-                
-                <div class="other-sports">
-                    <h3>Drugi izbori</h3>
-                    <ul>
-                        <li><a href="javascript:void(0)" id="sport1">Vlatkin drugi izbor: Tenis</a></li>
-                        <li><a href="javascript:void(0)" id="sport2">Marijin drugi izbor: Košarka</a></li>
-                        
-                    </ul>
-                </div>
-            </div>
         </div>
         
         <div class="sport-involvement">
@@ -150,11 +164,11 @@
                 </div>
                 
                 <div class="involvement-card">
-                    <h3>Marija odgovara:</h3>
+                    <h3>Lea odgovara:</h3>
                     <p>Nogomet uglavnom pratim i navijam za našu reprezentaciju, ali aktivno se ne bavim njime. Ipak, redovito posjećujem utakmice lokalnog kluba i skupljam dresove omiljenih igrača.</p>
                     <div class="gallery">
                         <div class="gallery-item">
-                            <img src="/api/placeholder/400/300" alt="Marija na utakmici" class="gallery-img">
+                            <img src="/api/placeholder/400/300" alt="Lea na utakmici" class="gallery-img">
                         </div>
                     </div>
                     <video width="100%" height="auto" controls style="margin-top: 10px;">
@@ -165,11 +179,33 @@
                 </div>
             </div>
         </div>
+        <div class="sidebar">
+            <h3 class="authors-section-title" >Autori</h3>
+            <div class="authors-section">
+                <div class="author-card">
+                    <img src="images/Groot.jpg" alt="Vlatka Miletić" class="author-img" id="author1-img">
+                    <div class="author-name" id="author1-name">Vlatka Miletić</div> 
+                </div>
+                <div class="author-card">
+                    <img src="images/slika.jpg" alt="Lea Ratkić" class="author-img" id="author2-img"> <!--Slikica-->
+                    <div class="author-name" id="author2-name">Lea Ratkić</div>
+                </div>
+            </div>
+            
+            <!-- <div class="other-sports">
+                <h3>Drugi izbori</h3>
+                <ul>
+                    <li><a href="javascript:void(0)" id="sport1">Vlatkin drugi izbor: Tenis</a></li>
+                    <li><a href="javascript:void(0)" id="sport2">Marijin drugi izbor: Košarka</a></li>
+                    
+                </ul>
+            </div> -->
+        </div>
     </div>
     
     <div class="footer">
-        <p>Web stranica izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku</a> u sklopu kolegija <a href="https://www.ferit.unios.hr/studiji/sveucilisni-preddiplomski-studij/SR601/38" target="_blank">Multimedijska tehnika</a>.</p>
-        <p>&copy; 2025. Vlatka Miletić i Marija Marić</p>
+        <p>Web stranica izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku</a> u sklopu kolegija <a href="https://moodle.srce.hr/2024-2025/course/view.php?id=198133" target="_blank">Multimedijska tehnika</a>.</p>
+        <p>&copy; 2025. Vlatka Miletić i Lea Ratkić</p>
     </div>
     
     <!-- Modal za prikaz slika u većoj rezoluciji -->
@@ -189,18 +225,19 @@
         <button onclick="closeAuthorInfo('author1-info')">Zatvori</button>
     </div>
     
-    <!-- Marija Marić info -->
+    <!-- Lea Ratkić info -->
     <div id="author2-info" class="author-info">
-        <h3>Marija Marić</h3>
+        <h3>Lea Ratkić</h3>
         <p><strong>Mjesto rođenja:</strong> <a href="https://www.vinkovci.hr/" target="_blank">Vinkovci</a></p>
-        <p><strong>Mjesto stanovanja:</strong> <a href="https://www.osijek.hr/" target="_blank">Osijek</a></p>
-        <p><strong>Osnovna škola:</strong> <a href="http://os-retfala-os.skole.hr/" target="_blank">OŠ Retfala</a></p>
-        <p><strong>Srednja škola:</strong> <a href="http://gimnazija-treca-os.skole.hr/" target="_blank">III. gimnazija Osijek</a></p>
+        <p><strong>Mjesto stanovanja:</strong> <a href="https://www.vinkovci.hr/" target="_blank">Vinkovci</a></p>
+        <p><strong>Osnovna škola:</strong> <a href="https://os-santolovica-privlaka.skole.hr/?news_hk=1&news_id=1340&mshow=950" target="_blank">OŠ Stjepana Antolovića</a></p>
+        <p><strong>Srednja škola:</strong> <a href="https://ss-ekonomska-vk.skole.hr/" target="_blank">Ekonomska i trgovačka škola Ivana Domca Vinkovci</a></p>
         <p><strong>Fakultet:</strong> <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a></p>
         <button onclick="closeAuthorInfo('author2-info')">Zatvori</button>
     </div>
     
-    <!-- Tenis modal -->
+    <!-- 
+    Tenis modal
     <div id="sport1-info" class="author-info" style="max-width: 600px;">
         <h3>Tenis</h3>
         <p>Tenis je sport u kojem se igrači (po jedan ili dva na svakoj strani) natječu tako da reketom udaraju lopticu preko mreže na protivničku stranu terena.</p>
@@ -218,7 +255,7 @@
         <button onclick="closeAuthorInfo('sport1-info')">Zatvori</button>
     </div>
 
-    <!-- Košarka modal -->
+   
     <div id="sport2-info" class="author-info" style="max-width: 600px;">
         <h3>Košarka</h3>
         <p>Košarka je momčadski sport u kojem dvije ekipe sa po pet igrača pokušavaju ostvariti što više poena ubacivanjem lopte u protivnički koš.</p>
@@ -236,8 +273,10 @@
         </div>
         <button onclick="closeAuthorInfo('sport2-info')">Zatvori</button>
     </div>
-    
-    <script>
+-->
+   
+
+      <script>
         // Modal za slike
         const modal = document.getElementById("imageModal");
         const modalImg = document.getElementById("modalImg");
@@ -292,6 +331,7 @@
         document.getElementById("sport2").onclick = function() {
             document.getElementById("sport2-info").style.display = "block";
         }
+
     </script>
 </body>
 </html>
