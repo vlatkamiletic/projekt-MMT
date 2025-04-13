@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
@@ -40,14 +41,16 @@
             </div>
             <!-- Dodajemo gumbe za dodatne sportove u gornji desni kut -->
             <div class="additional-sports-buttons">
-                <a href="formula.html" class="sport-button">Formula 1</a>
-                <a href="tenis.html" class="sport-button">Tenis</a>
+                <a href="formula.html" class="sport-button" title="Stranica Formula 1">Formula 1</a>
+                <a href="tenis.html" class="sport-button" title="Stranica Tenis">Tenis</a>
             </div>
         </section>
     </header>
     
     <div class="container">
         <div class="container">
+            <a href="#moj-odgovor" class="sport-button" title="Link za odgovor na pitanje">Bavim li se i ja ovim sportom?</a>
+
             <div class="sport-description">
                 <h2>O nogometu</h2>
                 <div class="text-with-image">
@@ -144,7 +147,7 @@
         </div>
         
         <div class="sport-involvement">
-            <h2>Bavim li se i ja ovim sportom ili ga samo volim?</h2>
+            <h2 id="moj-odgovor">Bavim li se i ja ovim sportom ili ga samo volim?</h2>
             <div class="involvement-cards">
                 <div class="involvement-card">
                     <h3>Vlatka odgovara:</h3>
@@ -170,17 +173,25 @@
                 
                 <div class="involvement-card">
                     <h3>Lea odgovara:</h3>
-                    <p>Nogomet uglavnom pratim i navijam za našu reprezentaciju, ali aktivno se ne bavim njime. Ipak, redovito posjećujem utakmice lokalnog kluba i skupljam dresove omiljenih igrača.</p>
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <img src="/api/placeholder/400/300" alt="Lea na utakmici" class="clickable-img" data-format="jpg">
+                    <p>Nogomet nisam nikada trenirala niti sam igrala rekreativno, ali volim gledati utakmice hrvatske reprezentacije.</p>     
+                    <div style="max-width: 350px; margin: 0 auto;">
+                        <div>
+                            <img src="images/pakistani-fan.gif" alt="Reakcija" style="width: 100%; height: auto; display: block;" class="clickable-img" data-format="gif">
+                            <div style="padding: 6px; background-color: #f8f8f8; text-align: center; font-size: 14px;">Kako bi izgledala moja reakcija na promašen gol</div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <p>Dio atmosfere s dočeka hrvatske nogometne reprezentacije nakon osvajanja srebrne medalje na Svjetskom prvenstvu 2018. godine:</p> 
+                    <div style="max-width: 350px; margin: 0 auto;">
+                        <div>
+                            <video controls style="width: 100%; height: 200px; display: block;">
+                                <source src="video/VID-20180717-WA0016.mp4" type="video/mp4">
+                                Vaš preglednik ne podržava video element.
+                            </video>
+                            <div style="padding: 6px; background-color: #f8f8f8; text-align: center; font-size: 14px;">Video s dočeka hrvatske reprezentacije</div>
                         </div>
                     </div>
-                    <video width="100%" height="auto" controls style="margin-top: 10px;">
-                        <source src="#" type="video/mp4">
-                        Vaš preglednik ne podržava video element.
-                    </video>
-                    <p><em>Moja reakcija na odlučujući gol reprezentacije</em></p>
+                    
                 </div>
             </div>
         </div>
@@ -234,12 +245,17 @@
     <div id="author2-info" class="author-info">
         <h3>Lea Ratkić</h3>
         <p><strong>Mjesto rođenja:</strong> <a href="https://www.vinkovci.hr/" target="_blank">Vinkovci</a></p>
-        <p><strong>Mjesto stanovanja:</strong> <a href="https://www.vinkovci.hr/" target="_blank">Vinkovci</a></p>
+        <p><strong>Mjesto stanovanja:</strong> <a href="https://www.opcina-privlaka.hr/" target="_blank">Privlaka</a></p>
         <p><strong>Osnovna škola:</strong> <a href="https://os-santolovica-privlaka.skole.hr/?news_hk=1&news_id=1340&mshow=950" target="_blank">OŠ Stjepana Antolovića</a></p>
         <p><strong>Srednja škola:</strong> <a href="https://ss-ekonomska-vk.skole.hr/" target="_blank">Ekonomska i trgovačka škola Ivana Domca Vinkovci</a></p>
         <p><strong>Fakultet:</strong> <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a></p>
         <button onclick="closeAuthorInfo('author2-info')">Zatvori</button>
     </div>
+
+
+    <a href="#" class="scroll-to-top" title="Na vrh">
+        <i class="fas fa-arrow-up"></i>
+    </a>    
 
 <!-- Povezivanje s vanjskim JavaScript fajlom -->
 <script src="script.js"></script>

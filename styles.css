@@ -517,3 +517,39 @@ button:hover {
     font-size: 16px;
     line-height: 1.6;
 }*/
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #b9d29f;
+    color: #fff;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none; /* Sprječava klikanje dok gumb nije vidljiv */
+}
+
+.scroll-to-top:hover {
+    background-color: #626f54;
+    transform: scale(1.1);
+}
+
+.scroll-to-top:active {
+    transform: scale(0.95);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto; /* Omogućava klikanje kad je gumb vidljiv */
+}

@@ -51,3 +51,13 @@ document.getElementById("author2-name").onclick = function() {
 function closeAuthorInfo(id) {
     document.getElementById(id).style.display = "none";
 }
+
+// Prikaz strelice nakon što se korisnik skrola dolje
+window.addEventListener('scroll', function() {
+    const scrollBtn = document.querySelector('.scroll-to-top');
+    if (window.pageYOffset > 300) {
+        scrollBtn.classList.add('show');
+    } else {
+        scrollBtn.classList.remove('show');
+    }
+});
