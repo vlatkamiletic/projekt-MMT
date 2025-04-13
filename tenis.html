@@ -9,19 +9,19 @@
 <body>
     <header>
         <!-- Logo u lijevom kutu -->
-        <a href="images/logo1-removebg-preview.png" target="_blank">
-            <img src="images/logo1-removebg-preview.png" alt="Logo" class="logo">
+        <a href="images/logo1-bijeli.png" target="_blank">
+            <img src="images/logo1-bijeli.png" alt="Logo" class="logo">
         </a>
 
         <!-- Gumbi za dodatne sportove u gornjem desnom kutu -->
         <div class="additional-home-button">
-            <a href="omiljeni-sport-web.html" class="home-button"> < Početna stranica </a>
+            <a href="omiljeni-sport-web.html" class="home-button">Početna stranica</a>
         </div>
 
         <section class="hero">
             <div class="hero-visual">
                 <div class="hero-visual-wrapper">
-                    <img src="images/tennis-background.jpg" alt="Tennis" class="hero-image">
+                    <img src="images/tennis-background.jpg" alt="Tennis" class="hero-image" data-format="jpg">
                 </div>
                 <div class="text-overlay">
                     <h1>Tenis</h1>
@@ -35,7 +35,7 @@
         <div class="sport-description">
             <h2>O tenisu</h2>
             <div class="text-with-image">
-                <img src="images/tennis-court.jpg" alt="Tennis Icon Left" class="image-left">
+                <img src="images/tennis-court.jpg" alt="Tennis Court" class="clickable-img" data-format="jpg">
                 <p>Tenis je jedan od najpopularnijih individualnih sportova na svijetu, poznat po svojoj dinamičnosti, preciznosti i strastvenim natjecateljima. Igrači se natječu na terenu s reketima udarajući lopticu preko mreže, ciljajući na protivnički dio terena.
                     Tenis se može igrati pojedinačno ili u parovima. Svaka igra počinje servisom, a cilj je osvojiti poen udaranjem lopte tako da protivnik ne uspije vratiti lopticu unutar granica terena. Igrači se natječu u različitim vrstama natjecanja: od manjih lokalnih turnira do prestižnih Grand Slam turnira.</p>
             </div>
@@ -54,10 +54,9 @@
             </div>
         
            
-        
             <h3>Osnovna pravila i terminologija</h3>
             <div class="text-with-image reverse">
-                <img src="images/tennis-9361_256.gif" alt="Tennis Icon Left" class="image-left" data-format="gif">
+                <img src="images/tennis-9361_256.gif" alt="Tennis Icon Left" class="clickable-img" data-format="gif">
                 <p>U tenisu, svaki meč se sastoji od seta koji se dalje dijeli na igre. Igrači moraju osvojiti najmanje četiri poena kako bi osvojili igru, a set se dobija ako igrač osvoji najmanje šest igara uz razliku od barem dva gema. Pobjednik meča je onaj igrač koji osvoji određeni broj setova (najčešće 3 ili 2, ovisno o vrsti turnira).
                     Za više informacija o tenisu, možete posjetiti <a href="https://www.hts.hr/" target="_blank">Hrvatski teniski savez</a>.</p>
             </div>
@@ -68,8 +67,18 @@
     </div>
 
     <div class="footer">
-        <p>Web stranica izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku</a> u sklopu kolegija <a href="https://www.ferit.unios.hr/studiji/sveucilisni-preddiplomski-studij/SR601/38" target="_blank">Multimedijska tehnika</a>.</p>
+        <p>Web stranica izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku</a> u sklopu kolegija <a href="https://moodle.srce.hr/2024-2025/course/view.php?id=198133" target="_blank">Multimedijska tehnika</a>.</p>
         <p>&copy; 2025. Vlatka Miletić i Lea Ratkić</p>
     </div>
+
+    <!-- Modal za prikaz slika u većoj rezoluciji -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img id="modalImg" class="modal-content" src="">
+    </div>>
+
+<!-- Povezivanje s vanjskim JavaScript fajlom -->
+<script src="script.js"></script>
+    
 </body>
 </html>
